@@ -8,12 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="icon" href="assets/arnav-fav.png" type="image/png">
+    <link rel="icon" href="assets\arnav fav.png" type="image/png">
 </head>
 <body>
     <header class="header">
         <div class="left-section">
-            <p class="logo">arnav27.com</p>
+            <p class="logo"><a href="https://arnav27.com">arnav27.com</a></p>
         </div>
         <div class="middle-section"></div>
         <div class="right-section">
@@ -21,8 +21,7 @@
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#education">Education</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -44,7 +43,7 @@
                 </div>
             </div>
         </div>
-        <div class="grid-item grid-col-span-2">
+        <div class="about-grid-item grid-col-span-2">
             <div class="profile-description ">
                 <p class="About-Me-heading"> About Me </p>
                 <p>
@@ -97,7 +96,7 @@
         </div>
     </div>
 
-    <div class="spacer-70"></div>
+
     <div class="spacer-70"></div>
 
     <div class="experience-section">
@@ -127,6 +126,41 @@
         </div>
     </div>
 
+    <div class="spacer-70"></div>
+
+    <div class="contact-grid-container">
+        <div class="contact-container">
+            <div class="top-section">
+                <p class="contact-heading">Contact Me</p>
+                <button class="linkedin-btn"><a href="https://www.linkedin.com/in/arnavs27/"><img src="icons\icons8-linkedin.svg" alt="" draggable="false"></a></button>
+            </div>
+
+            <div class="contact-forms">
+                <form action="/submit" method="post" id="form">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
+              
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+              
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email.." required>
+              
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject.." required>
+              
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+              
+                    <input type="submit" value="Submit">
+                  </form>
+                
+
+            </div>
+
+        </div>
+
+    </div>
     <div class="spacer-70"></div>
     <footer>
         <p class="credits">© Copyright 2024 | Website developed by <b><a class="AS-credit" href="https://www.linkedin.com/in/arnavs27/">Arnav Salian</a></b></p>

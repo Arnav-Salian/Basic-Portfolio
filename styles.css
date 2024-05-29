@@ -43,7 +43,7 @@ body {
 }
 
 .left-section{
-    width: 27%;
+    width: 30%;
 }
 
 .middle-section{
@@ -51,7 +51,7 @@ body {
 }
 
 .right-section{
-    width: 50%;
+    width: 45%;
 }
 
 
@@ -60,12 +60,18 @@ body {
     font-size: 35px;
     font-weight: 900;
     text-align: right;
-    transition: color 0.5s;
     padding-left: 10px;
+    
 
 }
 
-.logo:hover{
+.logo a{
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+    transition: color 0.5s;
+}
+
+.logo a:hover{
     color: rgb(42, 112, 224);
     cursor: pointer;
 }
@@ -133,7 +139,7 @@ footer{
 
 .about-grid-container {
     display: grid;
-    grid-template-columns: 20% 30% 20%;
+    grid-template-columns: 20% 30% 10%;
     gap: 3%;
     height: 615.031px;
     justify-content: center;
@@ -141,9 +147,9 @@ footer{
 }
 
 .about-grid-item {
-    padding: 10px;
     border: 1px solid rgba(255, 255, 255, 0);
-
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .profile-container{
@@ -171,8 +177,11 @@ footer{
 }
 
 .profile-description{
+    color: rgb(0, 30, 98);
+    font-weight: 500;
     background-color: rgba(171, 193, 255, 0.82);
-    padding: 20px;
+    padding: 40px;
+    padding-bottom: 50px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -193,7 +202,8 @@ footer{
 .profile-info{
     background-color: rgb(0, 6, 49);
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding-left: 27px;
     width: 100%;
     height: 100%;
@@ -224,7 +234,7 @@ footer{
 .edu-grid-container{
     background-color: rgba(255, 255, 255, 0);
     display: grid;
-    grid-template-columns: 20% 30% 20%;
+    grid-template-columns: 10% 30% 20%;
     gap:2%;
     height: 670px;
     justify-content: center;
@@ -237,9 +247,11 @@ footer{
 }
 
 .education-description{
+    color: rgb(0, 6, 49);
+    font-weight: 500;
     width: 100%;
     background-color: rgba(171, 193, 255, 0.82);
-    padding: 30px;
+    padding: 40px;
     border-radius: 5px;
     
 
@@ -252,7 +264,8 @@ footer{
     text-align: center;
     padding-top: 50px;
     padding-bottom: 30px;
-    text-decoration: overline;
+    text-decoration: overline;    
+    text-transform: uppercase;
 }
 
 .school-profile{
@@ -266,6 +279,7 @@ footer{
     border-radius: 5px;
     transition: 0.3s ease;
     padding: 30px;
+
 }
 
 .school-profile:hover {
@@ -315,7 +329,7 @@ footer{
 
 .experience-section{
     display: grid;
-    grid-template-columns: 20% 30% 20% ;
+    grid-template-columns: 20% 30% 10% ;
     gap: 2%;
     height: 500px;
     justify-content: center;
@@ -333,6 +347,7 @@ footer{
     padding: 20px;
     display: grid;
     grid-template-rows: 60% 40%;
+    transition: all 0.3s ease-in-out;
 }
 
 .ex-profile-img img{
@@ -347,6 +362,9 @@ footer{
 }
 
 .ex-description{
+    color: rgb(0, 6, 49);
+    font-weight: 500;
+    padding: 20px;
     background-color: rgba(171, 193, 255, 0.82);
     width: 100%;
     height: 100%;
@@ -405,3 +423,109 @@ footer{
     text-decoration: overline;
 
 }
+
+.ex-profile:hover {
+    transform: translateY(-5px);
+}
+
+
+
+.contact-grid-container{
+    display: grid;
+    grid-template-columns: 40%;
+    height: 900px;
+    justify-content: center;
+}
+
+.contact-container{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.top-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linkedin-btn{
+    background-color: rgb(2, 136, 209);
+    border-style: none;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+.linkedin-btn:hover{
+    transform: translateY(-5px);
+    opacity: 80%;
+}
+
+.contact-heading{
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(113, 167, 255);
+    padding-top: 40px;
+    padding-bottom: 15px;
+    text-decoration: overline;
+}
+
+.contact-forms{
+    display: flex;
+    align-items: center;
+
+}
+
+#form{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+
+    font-weight: 500;
+  }
+  
+  input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+
+    margin-bottom: 5px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: rgb(0, 30, 98);
+    color: white;
+    padding: 14px 20px;
+    border: 3px solid rgb(0, 30, 98);
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: all 0.35s ease-in-out;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(113, 167, 255);
+    border: 3px solid rgb(0, 30, 98);
+  }
+
+  input[type=submit]:active{
+    background-color: rgb(194, 217, 255);
+    border: 3px solid rgb(113, 167, 255);
+    color: rgb(92, 141, 255);
+  }
