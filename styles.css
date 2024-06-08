@@ -13,7 +13,7 @@
 
 body {
     position: relative;
-    padding-top: 70px;
+    padding-top: 100px;
     background-image: url('assets/web-backgroud.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -107,16 +107,15 @@ body {
 }
 
 .spacer-70{
-    height: 70px;
+    padding: 70px;
+    background-color: rgba(173, 216, 230, 0);
 }
 
-.spacer-2{
-    height: 800px;
-}
+
 
 footer{
     position: relative;
-    height: 90px;
+    min-height: 90px;
     width: 100%;
     background-color: black;
     color: white;
@@ -139,11 +138,13 @@ footer{
 
 .about-grid-container {
     display: grid;
-    grid-template-columns: 20% 30% 10%;
+    grid-template-columns: 20% 40%;
     gap: 3%;
-    height: 615.031px;
+    max-height: 615.031px;
     justify-content: center;
-
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-bottom:100px;
 }
 
 .about-grid-item {
@@ -155,7 +156,7 @@ footer{
 .profile-container{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 100%;
     background-color: rgb(0, 6, 49);
     border-radius: 5px;
     transition: all 0.5s;
@@ -169,8 +170,8 @@ footer{
 
 
 .profile-img img{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: cover;
     border-radius: 5px 5px 0 0;
 
@@ -205,8 +206,8 @@ footer{
     margin-top: 10px;
     margin-bottom: 10px;
     padding-left: 27px;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 5px;
 
 }
@@ -234,9 +235,9 @@ footer{
 .edu-grid-container{
     background-color: rgba(255, 255, 255, 0);
     display: grid;
-    grid-template-columns: 10% 30% 20%;
+    grid-template-columns: 40% 20%;
     gap:2%;
-    height: 670px;
+    max-height: 670px;
     justify-content: center;
 }
 
@@ -249,7 +250,7 @@ footer{
 .education-description{
     color: rgb(0, 6, 49);
     font-weight: 500;
-    width: 100%;
+    max-width: 100%;
     background-color: rgba(171, 193, 255, 0.82);
     padding: 40px;
     border-radius: 5px;
@@ -270,12 +271,12 @@ footer{
 
 .school-profile{
     background-color: rgba(241, 241, 241, 0.09);
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     display: flex;
+    gap: 10px;
     flex-direction: column;
-    justify-content: center;
-    gap: 10%;
+    justify-items: center;
     border-radius: 5px;
     transition: 0.3s ease;
     padding: 30px;
@@ -291,12 +292,14 @@ footer{
 .schools img{
     width: 100%;
     object-fit: contain;
-    padding-bottom: 30px;
+
 
 }
 
 .school-links button{
-    display: flex;
+    display: grid;
+    grid-template-columns: 20% 75%;
+    gap: 3%;
     align-items: center;
     padding: 7px;
     width: 90%;
@@ -311,6 +314,12 @@ footer{
     
 }
 
+
+.sch-btn-text{
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .school-links button:hover{
     background-color: rgb(51, 0, 129);
     border-color: rgb(162, 101, 255);
@@ -321,17 +330,21 @@ footer{
     color: white
 }
 
+.school-links button a:visited{
+    text-decoration: none;
+}
+
 .school-links button img{
-    width: 20px;
-    height: 20px;
+    max-width: 20px;
+    max-height: 20px;
     margin-right: 40px;
 }
 
 .experience-section{
     display: grid;
-    grid-template-columns: 20% 30% 10% ;
+    grid-template-columns: 20% 40% ;
     gap: 2%;
-    height: 500px;
+    max-height: 500px;
     justify-content: center;
 }
 
@@ -342,40 +355,44 @@ footer{
 
 .ex-profile{
     background-color: rgba(241, 241, 241, 0.09);
-    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
     border-radius: 5px;
     padding: 20px;
-    display: grid;
-    grid-template-rows: 60% 40%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
     transition: all 0.3s ease-in-out;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .ex-profile-img img{
-    width: 100%;
+    max-width: 100%;
     padding: 5px;
     object-fit: contain;
     margin: auto;
 }
 
-.grid-col-span-2{
-    grid-column: span 2;
-}
+
 
 .ex-description{
     color: rgb(0, 6, 49);
     font-weight: 500;
     padding: 20px;
     background-color: rgba(171, 193, 255, 0.82);
-    width: 100%;
-    height: 100%;
+    max-height: 100%;
     border-radius: 5px;
 }
 
 
 
 .exp-links button{
-    margin: auto;
-    display: flex;
+
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 20% 70%;
+    gap: 2%;
     align-items: center;
     padding: 7px;
     width: 90%;
@@ -387,7 +404,6 @@ footer{
     font-size: 15px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    margin-top: 20px;
 }
 
 .exp-links button:hover{
@@ -402,8 +418,8 @@ footer{
 }
 
 .exp-links button img{
-    width: 20px;
-    height: 20px;
+    max-width: 20px;
+    max-height: 20px;
     margin-right: 20%;
 }
 
@@ -411,7 +427,6 @@ footer{
 .ex-description{
     display: flex;
     flex-direction: column;
-
     align-items: center;
     padding: 20px;
 }
@@ -433,7 +448,7 @@ footer{
 .contact-grid-container{
     display: grid;
     grid-template-columns: 40%;
-    height: 900px;
+    max-height: 900px;
     justify-content: center;
 }
 
@@ -455,8 +470,8 @@ footer{
     border-radius: 25px;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    max-width: 50px;
+    max-height: 50px;
 }
 
 .linkedin-btn:hover{
@@ -481,7 +496,7 @@ footer{
 }
 
 #form{
-    width: 80%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -489,7 +504,6 @@ footer{
 label {
     display: block;
     margin-top: 10px;
-
     font-weight: 500;
   }
   
@@ -506,6 +520,7 @@ label {
   }
   
   input[type=submit] {
+    display: block;
     background-color: rgb(0, 30, 98);
     color: white;
     padding: 14px 20px;
@@ -516,6 +531,7 @@ label {
     font-size: 16px;
     font-weight: 600;
     margin-top: 10px;
+    margin-bottom: 40px;
     transition: all 0.35s ease-in-out;
   }
   
