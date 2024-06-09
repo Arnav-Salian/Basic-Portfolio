@@ -6,6 +6,10 @@
     
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 ::selection{
     background-color: rgb(35, 117, 184);
     color: white;
@@ -138,7 +142,7 @@ footer{
 
 .about-grid-container {
     display: grid;
-    grid-template-columns: 20% 40%;
+    grid-template-columns: 25% 55%;
     gap: 3%;
     max-height: 615.031px;
     justify-content: center;
@@ -185,6 +189,7 @@ footer{
     padding-bottom: 50px;
     border-radius: 5px;
     display: flex;
+    max-width: 740px;
     flex-direction: column;
 
 }
@@ -235,7 +240,7 @@ footer{
 .edu-grid-container{
     background-color: rgba(255, 255, 255, 0);
     display: grid;
-    grid-template-columns: 40% 20%;
+    grid-template-columns: 55% 25%;
     gap:2%;
     max-height: 670px;
     justify-content: center;
@@ -342,7 +347,7 @@ footer{
 
 .experience-section{
     display: grid;
-    grid-template-columns: 20% 40% ;
+    grid-template-columns: 25% 55% ;
     gap: 2%;
     max-height: 500px;
     justify-content: center;
@@ -447,12 +452,13 @@ footer{
 
 .contact-grid-container{
     display: grid;
-    grid-template-columns: 40%;
+    grid-template-columns: 50%;
     max-height: 900px;
     justify-content: center;
 }
 
 .contact-container{
+    padding: 30px;
     border: 1px solid white;
     background-color: white;
     border-radius: 5px;
@@ -544,4 +550,45 @@ label {
     background-color: rgb(194, 217, 255);
     border: 3px solid rgb(113, 167, 255);
     color: rgb(92, 141, 255);
+  }
+
+  .back-to-top-container{
+    display: grid;
+    grid-template-columns: 60%;
+    justify-content: center;
+    max-height: 50px;
+  }
+
+  .back-to-top-container button{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 50px;
+    background-color: rgb(36, 34, 99);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 3px solid rgb(125, 127, 191);
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.35s;
+    
+  }
+
+  .back-to-top-container button:hover{
+    background-color: rgb(113, 117, 242);
+    color: white;
+    border-color: rgb(205, 203, 244);
+  }
+
+  .back-to-top-container button:active{
+    background-color: rgb(65, 68, 155);
+    border-color: rgb(221, 222, 255);
+    color: rgb(221, 222, 255);
+  }
+
+  .back-to-top-container button a{
+    text-decoration: none;
+    color: white;
   }
